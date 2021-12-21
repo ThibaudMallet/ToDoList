@@ -1,0 +1,47 @@
+<!--Mini projet réalisé en suivant le tuto youtube suivant : https://www.youtube.com/watch?v=dlaFyjYUZ1c&list=PLA4dZx0XHZAzAOxZDiyQM9i3ryWJ0NVkX&index=22-->
+<!--Reste à faire : Retrouver le même état lors du rechargement de la page-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList JS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>ToDoList JS</h1>
+    </header>
+    <form>
+    <input type="text" class="todo-input" />
+    <button class="todo-button" type="submit">
+        <i class="far fa-plus-square"></i>
+    </button>
+    <div class="select">
+        <select name="todos" class="filter-todo">
+            <option value="all">Toutes</option>
+            <option value="completed">Check</option>
+            <option value="uncompleted">A faire</option>
+        </select>
+    </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+  </body>
+</html>
